@@ -95,7 +95,7 @@ void dRICH_TOF_Impact(TString infile="PATH_TO_INPUT_FILE"){
 
 	      trChAngle =0.0;
 	      np =0;
-	      for(unsigned int k=thetaPhiGasBegin[j]; k<thetaPhiGasEnd[j]; k++){//loop over Cherenkov angles
+	      for(unsigned int k=thetaPhiGasBegin[recoAssoc[j]]; k<thetaPhiGasEnd[recoAssoc[j]]; k++){//loop over Cherenkov angles
 		float gasAngle = thetaGas[k]*1e3;
 		trChAngle += gasAngle;
 		np++;
